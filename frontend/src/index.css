@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply bg-darkBg text-gray-100 font-sans antialiased overflow-x-hidden;
+}
+
+.glass-panel {
+  @apply bg-darkSurface/60 backdrop-blur-xl border border-white/10;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-electricCyan via-laserPink to-neonViolet;
+}
+
+.gradient-btn {
+  @apply bg-gradient-to-r from-electricCyan to-neonViolet hover:from-laserPink hover:to-electricCyan text-white shadow-glow-cyan transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0;
+}
+
+/* Custom horizontal scroll hiding for tables */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
